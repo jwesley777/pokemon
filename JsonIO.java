@@ -54,6 +54,13 @@ public class JsonIO {
             System.out.println(e.getMessage());
             return null;
         }
+        finally {
+            try {
+            reader.close();}
+            catch (IOException e) {}
+
+
+        }
     }
 
     public static void writeToFile(JSONArray arr, String fileName) {

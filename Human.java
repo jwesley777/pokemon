@@ -103,7 +103,7 @@ public class Human extends Animal implements IHands, Comparable<Human> {
 			System.out.println(ex.getMessage());
 		}
 	}
-	public String toString() { return name; }
+	public String toString() { return name+" in "+currentSpace+" ("+x+", "+y+")"; }
 	
 	private static void test () {
 		Human h = new Human("Luke",Space.CANTINA, 1,1);
